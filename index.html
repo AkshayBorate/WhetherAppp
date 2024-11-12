@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="weather-box">
+            <input type="text" id="i1" placeholder="Enter city name"><br>
+            <button id="btn">Get Weather</button>
+        </div>
+        <div class="result-box">
+            <div id="weatherInfo"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>        
+</body>
+</html>
+
+<style>
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+    }
+
+    body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        background-color: #f0f2f5;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .weather-box {
+        background-color: #1a79c7;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        text-align: center;
+        color: #ffffff;
+        width: 300px;
+    }
+
+    .weather-box input {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 10px;
+        border: none;
+        border-radius: 4px;
+        font-size: 1rem;
+        outline: none;
+    }
+
+    #btn {
+        width: 100%;
+        padding: 10px;
+        font-size: 1rem;
+        color: #ffffff;
+        background-color: #ff5733;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+    #btn:hover {
+        background-color: #ff6f4e;
+    }
+
+    .result-box {
+        width: 300px;
+        padding: 20px;
+        background-color: #ffffff;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        text-align: center;
+    }
+
+    #weatherInfo {
+        color: #333;
+    }
+
+    #weatherInfo img {
+        max-width: 100px;
+        margin-top: 10px;
+    }
+
+    #weatherInfo h3 {
+        margin: 10px 0;
+        color: #1a79c7;
+    }
+
+    #weatherInfo p {
+        margin: 5px 0;
+        font-size: 1rem;
+    }
+</style>
